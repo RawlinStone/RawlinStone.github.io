@@ -88,11 +88,14 @@
                     <p>
                         Welcome to my portfolio page, 
 						<br><br>
-						I am a graduate from University of California, Irvine with a B.S. in Computer Game Science with a specialization in Human Computer Interaction. 
+						I am a graduate from University of California, Irvine with a B.S. in <b>Computer Game Science</b> with a specialization in Human Computer Interaction. 
 						I have a passion to create entertainment for people and want to hone my skills to create video games or other forms of entertainment for the world.
 						<br><br>
-						I am currently working part-time as a Systems Developer for Stormbreach, but I'm looking for full-time employment in either Game Design, Software Development, 
-						UI/UX Development, or Graphic Design. Game Design is my eventual end-goal for my career, but the other fields are relevant experience to me and Game Development companies.
+						I am currently working part-time as a <b>Systems Developer</b> for Stormbreach, but I'm looking for full-time employment in either <b>Game Design, Software Development, 
+						UI/UX Development, or Graphic Design.</b> Game Design is my eventual end-goal for my career, but the other fields are relevant experience to me and Game Development companies.
+						<br><br>
+						You can contact me via the information on my Resume, connect via <a href="https://www.linkedin.com/in/rawlin-stone-10388420b/" rel="noopener noreferrer" target="_blank">LinkedIn</a> and send me a message<br>
+						or via the form at the bottom of the page.
 						<br><br>
 						Thanks for stopping by!
 						
@@ -177,37 +180,90 @@
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
+			
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/monstertamer.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
+                        <h3>Monster Tamer</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+							This is my capstone game from my final year at UC Irvine. About half a year of development was spent on this project.
+							During development, we had to make the shift from a 3D exploration game where players could move around town, to a 
+							menu-driven game. The game is pokemon-like in nature with a darker overall theme. 
                         </p>
-                        <a href="#">View Project</a>
+                        <a href="https://ttslee.itch.io/team-isekai-me-please" rel="noopener noreferrer" target="_blank">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
-                <!-- End .project -->
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/itchgames.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
+                        <h3>itch.io games</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            All of my itch.io games, aside from <i>Shadow's Guise</i>, can be played in the browser. These are most of the games that I worked on at UC Irvine. 
+							Other projects I have worked on remained unfinished and therefore did not make it to the list.
                         </p>
-                        <a href="#">View Project</a>
+                        <a href="https://rawlinstone.itch.io/" rel="noopener noreferrer" target="_blank">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
-                <!-- End .project -->
+				
+				
+				<div class="project shadow-large">
+                    <div class="project-image">
+                        <div class="w3-content w3-display-container">
+						  <img class="mySlides" src="images/appleSpriteshrunk.png" style="width:100%">
+						  <img class="mySlides" src="images/healthPotion1Spriteshrunk.png" style="width:100%">
+						  <img class="mySlides" src="images/daggerSpriteshrunk.png" style="width:100%">
+
+						  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+						  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+						</div>
+
+						<script>
+						var slideIndex = 1;
+						showDivs(slideIndex);
+
+						function plusDivs(n) {
+						  showDivs(slideIndex += n);
+						}
+
+						function showDivs(n) {
+						  var i;
+						  var x = document.getElementsByClassName("mySlides");
+						  if (n > x.length) {slideIndex = 1}
+						  if (n < 1) {slideIndex = x.length}
+						  for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none";  
+						  }
+						  x[slideIndex-1].style.display = "block";  
+						}
+						</script>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>3D models</h3>
+                        <p>
+                            The slideshow to the left has still images of the models I created for <b>Monster Tamer</b>. 
+							I self-taught myself Blender to create the models for the project.
+							I created over 20 different models for the game.
+							The models shown are a red apple, a health potion that used a glass texture, and a dagger.
+							Glass textures may appear different in the actual game since some material textures did not transfer well from Blender to Unity.
+                        </p>
+                        <a href="https://rawlinstone.itch.io/" rel="noopener noreferrer" target="_blank">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+				
+				
+				
+				
             </div>
         </div>
     </div>
@@ -215,10 +271,14 @@
 
     <div id="skills">
         <h2 class="heading">Programming Skills</h2>
+		        <p>
+					Python is the programming language I am strongest in for day-to-day use. Because I work in Unity <br>
+					and Unreal Engines, I also have also programmed a lot of C# and C++ respectively. 
+                </p>		
         <ul>
             <li>Python</li>
             <li>Node.js</li>
-            <li>AngularJs</li>
+            <li>Angular.js</li>
             <li>React</li>
             <li>Java</li>
             <li>C#</li>
@@ -227,9 +287,15 @@
             <li>Python</li>
             <li>React</li>
 			<li>HTML/CSS</li>
+			<li>SCSS</li>
         </ul>
 		<br>
 		<h2 class="heading">Software Skills</h2>
+		        <p>
+					Most of these skills below I have 3 years of experience with, but other skills I may have more. <br>
+					For example, I have self-taught myself Photoshop and have been using it for graphic design purposes since 2007. <br>
+					My projects above display <i>some</i> of my graphic design skills. I don't have access to them all on my current PC.
+                </p>
         <ul>
             <li>Adobe Photoshop</li>
             <li>AutoCAD</li>
@@ -237,6 +303,7 @@
             <li>Figma</li>
             <li>G Suite</li>
             <li>GitHub</li>
+			<li>Gimp</li>
             <li>Linux</li>
             <li>Maya</li>
             <li>MS Office (Word, PowerPoint, Excel)</li>
