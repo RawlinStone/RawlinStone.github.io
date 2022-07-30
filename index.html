@@ -222,7 +222,7 @@
                 </div>
 				
 				
-				<div class="project shadow-large">
+		<div class="project shadow-large">
 		<div class="project-image">
 			 <div id="slideshow1" class="slideshow-container">
 
@@ -250,8 +250,8 @@
 
 				<div class="mySlides fade">
 
-				  <a href="fullImages/staminaPotion3Sprite.png" target="_blank"><img  src="images/staminaPotion3Spriteshrunk.png" style="width:100%"></a>
-				  <div class="text">Large Stamina Potion</div>
+				  <a href="fullImages/imp1.png" target="_blank"><img  src="images/imp2.png" style="width:100%"></a>
+				  <div class="text">Imp</div>
 				</div>
 
 				<button class="prev" onclick="plusSlides(-1,slideshow1)">&#10094;</button>
@@ -275,8 +275,7 @@
 			<h3>3D models</h3>
 			<p>
 				The slideshow to the left has still images of the models I created for <b>Monster Tamer</b>. 
-				I self-taught myself Blender to create the models for the project.
-				I created over 20 different models for the game, but selected five that I had already created stills for in the game.
+				I created over 20 different models for the game, and selected five.
 				Glass textures may appear different in the actual game.
 				<br><br>
 				Feel free to click the images in the slideshow for a higher resolution.
@@ -286,7 +285,67 @@
 		<!-- End .project-info -->
 	</div>
 	
-	
+		<div class="project shadow-large">
+		<div class="project-image">
+			 <div id="slideshow7" class="slideshow-container">
+
+				<div class="mySlides fade">
+				  <a href="fullImages/boulder1.png" target="_blank"><img  src="images/boulder2.png" style="width:100%"></a>
+				  <div class="text">Boulder, Bush, and Trees</div>
+				</div>
+
+				<div class="mySlides fade">
+
+				  <a href="fullImages/rope1.png" target="_blank"><img src="images/rope2.png" style="width:100%"></a>
+				  <div class="text">Rope</div>
+				</div>
+
+				<div class="mySlides fade">
+
+				  <a href="fullImages/crate1.png" target="_blank"><img src="images/crate2.png" style="width:100%"></a>
+				  <div class="text">Crate</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <a href="fullImages/barrel1.png" target="_blank"><img  src="images/barrel2.png" style="width:100%"></a>
+				  <div class="text">Barrel</div>
+				</div>
+
+				<div class="mySlides fade">
+
+				  <a href="fullImages/torch1.png" target="_blank"><img  src="images/torch2.png" style="width:100%"></a>
+				  <div class="text">Torch (with particles)</div>
+				</div>
+
+				<button class="prev" onclick="plusSlides(-1,slideshow7)">&#10094;</button>
+				<button class="next" onclick="plusSlides(1, slideshow7)">&#10095;</button>
+
+
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1, slideshow7)"></span> 
+				  <span class="dot" onclick="currentSlide(2, slideshow7)"></span> 
+				  <span class="dot" onclick="currentSlide(3, slideshow7)"></span> 
+				  <span class="dot" onclick="currentSlide(4, slideshow7)"></span> 
+				  <span class="dot" onclick="currentSlide(5, slideshow7)"></span> 
+				</div>
+				</div>
+				
+		
+
+		</div>
+		<!-- End .project-image -->
+		<div class="project-info">
+			<h3>Environment Models</h3>
+			<p>
+				The slideshow to the left has still images of environment models I created for <b>Monster Tamer</b>. 
+				I selected five from the game scene that show off various models and my progression of learning 3D modelling.
+				<br><br>
+				Feel free to click the images in the slideshow for a higher resolution.
+				
+			</p>
+		</div>
+		<!-- End .project-info -->
+	</div>
 	
 	<div class="project shadow-large">
 		<div class="project-image">
@@ -727,7 +786,9 @@ var slideshow6 = document.getElementById("slideshow6");
 slideshow6.currentSlideIndex = 1;
 showSlides(slideshow6.currentSlideIndex, slideshow6);
 
-
+var slideshow7 = document.getElementById("slideshow7");
+slideshow7.currentSlideIndex = 1;
+showSlides(slideshow7.currentSlideIndex, slideshow7);
 
 function plusSlides(n, slideshow) {
   showSlides(slideshow.currentSlideIndex += n, slideshow);
